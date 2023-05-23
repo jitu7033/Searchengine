@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>google</title>
+</head>
+<body>
+    <!-- <--nav baar--/> -->
+    <nav class="navbar">
+            <div class="navbar-wrap">
+                <a href="https://myaccount.google.com/?pli=1">Gmail</a>
+                <a href="#">Images</a>
+                <div class="app">
+                    <img src="OIP (3).jpg" alt="" width="20px" height="20px">
+                </div>
+                <div class="account">
+                    <img class="account" src="OIP (1).jpg" alt="">
+                </div>
+            </div>
+    </nav>
+    <main>
+        <img class="logo" src="googlelogo_color_272x92dp.png" alt="" width="400px">
+        <div>
+           <span class="search"><i class="fa fa-search"></i>
+            <input type="text" name="" class="query" value="">
+            <i class="fa fa-microphone"></i>
+            <!-- <img src="th (1).jpg" alt=""> -->
+        </span>
+        </div>
+        <button class="searchbutton">
+            Search
+        </button>
+        <div class="search-button">
+           <button>Google search</button>
+           <button>I 'm Feeling Lucky</button>
+        </div>
+        <div class="search-language">
+            <p>Google offerd in:</p>
+            <a href="">Indonesia</a>
+            <a href="">base ball</a>
+        </div>
+    </main>
+
+    <!-- footer -->
+    
+    <footer>
+        <div class="location">
+            Indonesia
+        </div>
+        <a class="contactus" href="contactform.html"><div class="contactUs">Contact Us</a>
+        </div>
+        <div class="footer-menu">
+            <div class="left-menu">
+                <a href="">About</a>
+                <a href="">Advertisment</a>
+                <a href="">Business</a>
+                <a href="">How search Works</a>
+            </div>
+            <div class="right-menu">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Settings</a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let query = document.querySelector('.query');
+        let searchbutton = document.querySelector('.searchbutton');
+
+        searchbutton.onclick = function(){
+            let url = 'https://www.google.com/search?q='+query.value;
+            window.open(url);
+        }
+    </script>
+
+    
+</body>
+</html>
